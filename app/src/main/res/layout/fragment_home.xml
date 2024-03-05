@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_14sdp"
+    tools:context=".Fragment.HomeFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello "
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvReferralCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvName"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlRecharge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvRecharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/gold_color"
+            android:drawableLeft="@drawable/add_recharge"
+            android:drawablePadding="@dimen/_10sdp"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/llTotalEarning"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    app:cardBackgroundColor="@color/orage_color"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today Income"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="@dimen/_10sdp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tvTodayIncome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹0"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/inter_bold"
+                            android:textSize="@dimen/_20sdp"
+                            />
+
+                    </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/coins_ic"
+                            />
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    app:cardBackgroundColor="@color/blue_color"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total Income"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="@dimen/_10sdp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tvTotalIncome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹0"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/inter_bold"
+                            android:textSize="@dimen/_20sdp"
+                            />
+
+                    </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/coins_ic"
+                            />
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/llTotalEarning"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    app:cardBackgroundColor="@color/Purple_color"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Recharge balance"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="@dimen/_10sdp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tvRechargeBalance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹0"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/inter_bold"
+                            android:textSize="@dimen/_20sdp"
+                            />
+
+                    </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/coins_ic"
+                            />
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="@dimen/_14sdp"
+                    app:cardBackgroundColor="@color/blue_light_color"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Remaining balance"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="@dimen/_10sdp"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tvRemainingBalance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="₹0"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/inter_bold"
+                            android:textSize="@dimen/_20sdp"
+                            />
+
+                    </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/coins_ic"
+                            />
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:lottie_rawRes="@raw/empty"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:layout_gravity="center"
+                    />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/rvtransactionitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
